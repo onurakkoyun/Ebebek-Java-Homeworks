@@ -4,31 +4,31 @@ public class ManavKasaProgrami {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		double armut = 2.14;
-		double elma = 3.67;
-		double domates = 1.11;
-		double muz = 0.95;
-		double patlican = 5;
+		double pear = 2.14;
+		double apple = 3.67;
+		double tomatoes = 1.11;
+		double banana = 0.95;
+		double aubergine = 5;
 		
 		double kilo = 0;
-		double tutar = 0;
+		double amount = 0;
 		
 		System.out.print("Armut Kaç Kilo ? :");
 		kilo = scanner.nextDouble();
-		tutar += kilo * armut;
+		amount += kilo * pear;
 		System.out.print("Elma Kaç Kilo ? :");
 		kilo = scanner.nextDouble();
-		tutar += kilo * elma;
+		amount += kilo * apple;
 		System.out.print("Domates Kaç Kilo ? :");
 		kilo = scanner.nextDouble();
-		tutar += kilo * domates;
+		amount += kilo * tomatoes;
 		System.out.print("Muz Kaç Kilo ? :");
 		kilo = scanner.nextDouble();
-		tutar += kilo * muz;
+		amount += kilo * banana;
 		System.out.print("Patlıcan Kaç Kilo ? :");
 		kilo = scanner.nextDouble();
-		tutar += kilo * patlican;
-		System.out.print("Toplam Tutar : " + tutar + " TL");
+		amount += kilo * aubergine;
+		System.out.print("Toplam Tutar : " + amount + " TL");
 
 	}
 
