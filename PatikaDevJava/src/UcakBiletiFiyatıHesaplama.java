@@ -5,72 +5,72 @@ public class UcakBiletiFiyatıHesaplama {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		
-		double mesafe,tutar = 0;
-		int tip,yas;
+		double distance,amount = 0;
+		int type,age;
 		
 		
 		System.out.print("Mesafeyi km türünden giriniz : ");
-		mesafe=scanner.nextDouble();
-		tutar = mesafe * 0.10;
+		distance=scanner.nextDouble();
+		amount = distance * 0.10;
 		System.out.print("Yaşınızı giriniz : ");
-		yas=scanner.nextInt();
+		age=scanner.nextInt();
 		System.out.print("Yolculuk tipini giriniz (1 => Tek Yön , 2 => Gidiş Dönüş ): ");
-		tip=scanner.nextInt();
+		type=scanner.nextInt();
 		
 
-		if (yas > 0 && mesafe > 0 && (tip == 1 || tip == 2)) {
+		if (age > 0 && distance > 0 && (type == 1 || type == 2)) {
 			
 			
-			if (yas < 12) {
+			if (age < 12) {
 				
-				if (tip == 1) {
-					tutar -= tutar * 0.5;
-					System.out.println("Toplam Tutar = " +tutar + " TL");
+				if (type == 1) {
+					amount -= amount * 0.5;
+					System.out.println("Toplam Tutar = " +amount + " TL");
 				}
 				else {
-					tutar -= tutar * 0.5;
-					tutar -= tutar * 0.2;
-					tutar *= 2;
-					System.out.println("Toplam Tutar = " +tutar + " TL");
+					amount -= amount * 0.5;
+					amount -= amount * 0.2;
+					amount *= 2;
+					System.out.println("Toplam Tutar = " +amount + " TL");
 				}
 			}
-			else if ( yas >= 12 && yas <= 24 ) {
+			else if ( age >= 12 && age <= 24 ) {
 				
-				if (tip == 1) {
-					tutar -= tutar * 0.1;
-					System.out.println("Toplam Tutar = " +tutar + " TL");
+				if (type == 1) {
+					amount -= amount * 0.1;
+					System.out.println("Toplam Tutar = " +amount + " TL");
 				}
 				else {
-					tutar -= tutar * 0.1;
-					tutar -= tutar * 0.2;
-					tutar *= 2;
-					System.out.println("Toplam Tutar = " +tutar + " TL");
+					amount -= amount * 0.1;
+					amount -= amount * 0.2;
+					amount *= 2;
+					System.out.println("Toplam Tutar = " +amount + " TL");
 				}
 			}
-			else if ( yas > 24 && yas <= 65 ) 
+			else if ( age > 24 && age <= 65 ) 
 			{
 				
-				if (tip == 1) {
-					System.out.println("Toplam Tutar = " +tutar + " TL");
+				if (type == 1) {
+					System.out.println("Toplam Tutar = " +amount + " TL");
 				}
 				else {
-					tutar -= tutar * 0.2;
-					tutar *= 2;
-					System.out.println("Toplam Tutar = " +tutar + " TL");
+					amount -= amount * 0.2;
+					amount *= 2;
+					System.out.println("Toplam Tutar = " +amount + " TL");
 				}
 			}
-			else if ( yas > 65 ) 
+			else if ( age > 65 ) 
 			{
 				
-				if (tip == 1) {
-					tutar -= tutar * 0.3;
-					System.out.println("Toplam Tutar = " +tutar + " TL");
+				if (type == 1) {
+					amount -= amount * 0.3;
+					System.out.println("Toplam Tutar = " +amount + " TL");
 				}
 				else {
-					tutar -= tutar * 0.3;
-					tutar -= tutar * 0.2;
-					tutar *= 2;
-					System.out.println("Toplam Tutar = " +tutar + " TL");
+					amount -= amount * 0.3;
+					amount -= amount * 0.2;
+					amount *= 2;
+					System.out.println("Toplam Tutar = " +amount + " TL");
 				}
 			}
 			
