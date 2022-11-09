@@ -4,31 +4,31 @@ public class ArtikYilHesaplama {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		boolean artik = false;
+		boolean isLeapYear = false;
 		
 		System.out.print("Yıl Giriniz : ");
-		int yil = scanner.nextInt();
+		int year = scanner.nextInt();
 		
 		
-        if(yil % 4 == 0)
+        if(year % 4 == 0)
         {
-            if( yil % 100 == 0)
+            if( year % 100 == 0)
             {
-                if ( yil % 400 == 0)
-                    artik = true;
+                if ( year % 400 == 0)
+                	isLeapYear = true;
                 else
-                    artik = false;
+                	isLeapYear = false;
             }
             else
-                artik = true;
+            	isLeapYear = true;
         }
         else
-            artik = false;
+        	isLeapYear = false;
  
-        if(artik)
-            System.out.println(yil + " bir artık yıldır !");
+        if(isLeapYear)
+            System.out.println(year + " bir artık yıldır !");
         else
-            System.out.println(yil + " bir artık yıl değildir !");
+            System.out.println(year + " bir artık yıl değildir !");
 
 	}
 
