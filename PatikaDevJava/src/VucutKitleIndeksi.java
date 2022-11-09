@@ -6,10 +6,10 @@ public class VucutKitleIndeksi {
 		Scanner scanner = new Scanner(System.in);
 		
 		System.out.print("Lütfen boyunuzu (metre cinsinde) giriniz : ");
-		double boy = scanner.nextDouble();
+		double height = scanner.nextDouble();
 		System.out.print("Lütfen kilonuzu giriniz : ");
-		double kilo = scanner.nextDouble();
-		double vki = kilo / (boy * boy);
+		double weight = scanner.nextDouble();
+		double vki = weight / (height * height);
 		System.out.println("Vücut Kitle İndeksiniz : " + vki);
 
 	}
