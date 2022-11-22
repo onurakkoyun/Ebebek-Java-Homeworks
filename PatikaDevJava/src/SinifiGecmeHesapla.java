@@ -30,10 +30,9 @@ public class SinifiGecmeHesapla {
 		for (int i = 0; i < dersler.size(); i++) {
 			if (dersler.get(i) >= 0 && dersler.get(i) <= 100) {
 				avg +=dersler.get(i);
-				count++;
 			}
 		}
-		avg = avg / count;
+		avg = avg / 5;
 		if (avg >= 55) {
 			System.out.println("Geçtiniz "+ avg);
 		}
